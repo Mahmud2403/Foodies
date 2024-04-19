@@ -34,7 +34,7 @@ https://drive.google.com/file/d/1rlRitMXCcv4SfzOpFMgv_DxItQXy1YeU/view?usp=drive
 
 ## Предварительный просмотр:
 
-<img src="https://github.com/Mahmud2403/Foodies/assets/111182031/efb35de6-1b6a-4906-ae58-b9c5617c729f" width="200" height="200">. ![image](https://github.com/Mahmud2403/Foodies/assets/111182031/b672f61c-1098-4e84-801c-9fc371bd78a6)![image](https://github.com/Mahmud2403/Foodies/assets/111182031/b57d5ba5-5ca2-486c-ba84-a9ca27575977)[image](https://github.com/Mahmud2403/Foodies/assets/111182031/d77fca20-698b-4138-a169-33116c19f5b3)
+<img src="https://github.com/Mahmud2403/Foodies/assets/111182031/efb35de6-1b6a-4906-ae58-b9c5617c729f" height="200">. ![image](https://github.com/Mahmud2403/Foodies/assets/111182031/b672f61c-1098-4e84-801c-9fc371bd78a6)![image](https://github.com/Mahmud2403/Foodies/assets/111182031/b57d5ba5-5ca2-486c-ba84-a9ca27575977)[image](https://github.com/Mahmud2403/Foodies/assets/111182031/d77fca20-698b-4138-a169-33116c19f5b3)
 
 
 
