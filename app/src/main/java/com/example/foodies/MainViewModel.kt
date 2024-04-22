@@ -1,6 +1,5 @@
 package com.example.foodies
 
-import android.util.Log
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -21,7 +20,7 @@ import javax.inject.Inject
 
 
 @HiltViewModel
-class CatalogViewModel @Inject constructor(
+class MainViewModel @Inject constructor(
     private val categoryRepository: CategoryRepository,
     private val productRepository: ProductRepository,
     private val tagRepository: TagRepository,

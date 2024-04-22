@@ -7,7 +7,7 @@ import androidx.navigation.NavGraphBuilder
 import androidx.navigation.compose.composable
 import com.example.foodies.base.navigation.FoodiesNavigationDestination
 import com.example.foodies.ui.screens.cart.CartScreen
-import com.example.foodies.CatalogViewModel
+import com.example.foodies.MainViewModel
 import com.example.foodies.base.navigation.Direction
 import com.example.foodies.base.navigation.currentRout
 import com.example.foodies.base.navigation.slideIntoContainer
@@ -15,7 +15,6 @@ import com.example.foodies.base.navigation.slideOutOfContainer
 import com.example.foodies.base.navigation.targetRout
 import com.example.foodies.ui.screens.catalog.navigation.CatalogNavigation
 import com.example.foodies.ui.screens.splash.navigation.SplashScreenEndNavigation
-import com.example.foodies.ui.screens.splash.navigation.SplashScreenStartNavigation
 
 object CartNavigation: FoodiesNavigationDestination {
     override val route: String = "cart_route"
@@ -47,7 +46,7 @@ fun NavGraphBuilder.cart(
             navController.getBackStackEntry(CatalogNavigation.route)
         }
 
-        val viewModel = hiltViewModel<CatalogViewModel>(parentEntry)
+        val viewModel = hiltViewModel<MainViewModel>(parentEntry)
 
         CartScreen(
             onClickBack = onClickBack,

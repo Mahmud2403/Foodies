@@ -9,7 +9,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
 import com.example.foodies.base.navigation.FoodiesNavigationDestination
 import com.example.foodies.domain.model.Product
-import com.example.foodies.CatalogViewModel
+import com.example.foodies.MainViewModel
 import com.example.foodies.ui.screens.catalog.navigation.CatalogNavigation
 import com.example.foodies.ui.screens.detail.DetailProductScreen
 
@@ -38,7 +38,7 @@ fun NavGraphBuilder.detail(
             navController.getBackStackEntry(CatalogNavigation.route)
         }
 
-        val viewModel = hiltViewModel<CatalogViewModel>(parentEntry)
+        val viewModel = hiltViewModel<MainViewModel>(parentEntry)
 
         val id = requireNotNull(backStackEntry.arguments?.getInt("id"))
 

@@ -1,20 +1,14 @@
 package com.example.foodies.ui.screens.catalog.navigation
 
-import androidx.compose.material.ExperimentalMaterialApi
 import androidx.compose.runtime.remember
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.compose.composable
-import com.example.foodies.base.navigation.Direction
 import com.example.foodies.base.navigation.FoodiesNavigationDestination
-import com.example.foodies.base.navigation.slideOutOfContainer
-import com.example.foodies.base.navigation.targetRout
 import com.example.foodies.ui.screens.cart.navigation.CartNavigation
 import com.example.foodies.ui.screens.catalog.CatalogScreen
-import com.example.foodies.CatalogViewModel
-import com.example.foodies.base.navigation.currentRout
-import com.example.foodies.base.navigation.slideIntoContainer
+import com.example.foodies.MainViewModel
 import com.example.foodies.ui.screens.detail.navigation.DetailProductNavigation
 import com.example.foodies.ui.screens.search.navigation.SearchNavigation
 
@@ -34,7 +28,7 @@ fun NavGraphBuilder.catalog(
             navController.getBackStackEntry(CatalogNavigation.route)
         }
 
-        val viewModel = hiltViewModel<CatalogViewModel>(parentEntry)
+        val viewModel = hiltViewModel<MainViewModel>(parentEntry)
 
 
         CatalogScreen(

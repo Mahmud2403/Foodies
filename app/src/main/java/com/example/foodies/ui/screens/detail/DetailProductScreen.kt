@@ -25,7 +25,7 @@ import androidx.compose.ui.unit.dp
 import com.example.foodies.R
 import com.example.foodies.common.FoodiesButton
 import com.example.foodies.domain.model.Product
-import com.example.foodies.CatalogViewModel
+import com.example.foodies.MainViewModel
 import com.example.foodies.ui.screens.detail.components.ProductCharacteristics
 import com.example.foodies.utils.HorizontalSpacer
 import com.example.foodies.utils.VerticalSpace
@@ -38,7 +38,7 @@ fun DetailProductScreen(
     modifier: Modifier = Modifier,
     onClickBack: () -> Unit,
     product: Product,
-    viewModel: CatalogViewModel,
+    viewModel: MainViewModel,
 ) {
     val scrollState = rememberScrollState()
     Scaffold(

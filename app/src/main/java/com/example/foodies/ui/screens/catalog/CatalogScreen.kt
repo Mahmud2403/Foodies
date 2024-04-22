@@ -11,7 +11,6 @@ import androidx.compose.foundation.layout.systemBarsPadding
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.ExperimentalMaterialApi
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
@@ -37,7 +36,7 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.example.foodies.R
 import com.example.foodies.common.FoodiesButton
 import com.example.foodies.common.FoodiesProductList
-import com.example.foodies.CatalogViewModel
+import com.example.foodies.MainViewModel
 import com.example.foodies.Filter
 import com.example.foodies.common.EmptyList
 import com.example.foodies.ui.screens.catalog.components.CatalogTopBar
@@ -53,7 +52,7 @@ import com.holix.android.bottomsheetdialog.compose.BottomSheetDialogProperties
 @Composable
 fun CatalogScreen(
     modifier: Modifier = Modifier,
-    viewModel: CatalogViewModel = hiltViewModel(),
+    viewModel: MainViewModel = hiltViewModel(),
     onClickProduct: (id: Int) -> Unit,
     onClickCart: () -> Unit,
     onClickSearch: () -> Unit,

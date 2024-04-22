@@ -6,7 +6,6 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.systemBarsPadding
-import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
@@ -24,7 +23,7 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.example.foodies.R
 import com.example.foodies.common.FoodiesButton
 import com.example.foodies.common.FoodiesProductList
-import com.example.foodies.CatalogViewModel
+import com.example.foodies.MainViewModel
 import com.example.foodies.common.EmptyList
 import com.example.foodies.ui.screens.search.components.SearchTopBar
 import com.example.foodies.utils.HorizontalSpacer
@@ -37,7 +36,7 @@ fun SearchScreen(
     onBackClick: () -> Unit,
     onClickProduct: (Int) -> Unit,
     onClickCart: () -> Unit,
-    viewModel: CatalogViewModel,
+    viewModel: MainViewModel,
 ) {
 
     val uiState by viewModel.catalogUiState.collectAsStateWithLifecycle()

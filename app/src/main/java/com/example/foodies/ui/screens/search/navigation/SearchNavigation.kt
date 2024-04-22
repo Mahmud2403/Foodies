@@ -7,7 +7,7 @@ import androidx.navigation.NavGraphBuilder
 import androidx.navigation.compose.composable
 import com.example.foodies.base.navigation.FoodiesNavigationDestination
 import com.example.foodies.ui.screens.cart.navigation.CartNavigation
-import com.example.foodies.CatalogViewModel
+import com.example.foodies.MainViewModel
 import com.example.foodies.base.navigation.Direction
 import com.example.foodies.base.navigation.currentRout
 import com.example.foodies.base.navigation.slideIntoContainer
@@ -47,7 +47,7 @@ fun NavGraphBuilder.search(
             navController.getBackStackEntry(CatalogNavigation.route)
         }
 
-        val viewModel = hiltViewModel<CatalogViewModel>(parentEntry)
+        val viewModel = hiltViewModel<MainViewModel>(parentEntry)
 
         SearchScreen(
             onBackClick = onClickBack,
