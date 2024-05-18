@@ -81,7 +81,6 @@ dependencies {
     debugImplementation(libs.tooling)
     debugImplementation(libs.test.manifest)
 
-
     testImplementation(libs.junit)
     androidTestImplementation(libs.test.junit4)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -100,7 +99,6 @@ dependencies {
     implementation(libs.coil.compose)
     implementation(libs.coil.svg)
     implementation(libs.landscapist.coil)
-
 
     //OkHttps
     implementation(libs.logging.interceptor)

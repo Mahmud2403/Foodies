@@ -51,6 +51,7 @@ fun Modifier.clickableWithRipple(
         )
     )
 }
+
 fun Modifier.shadow(
     color: Color = Color.Black,
     offsetX: Dp = 0.dp,
